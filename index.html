@@ -21,98 +21,8 @@
             --color-quiz-rojo: #d9534f;
         }
 
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-            line-height: 1.6;
-            background-color: var(--color-fondo);
-            color: var(--color-texto);
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Ocultar todas las páginas por defecto */
-        .page {
-            display: none;
-        }
-        /* Mostrar solo la página activa */
-        .page.active {
-            display: block;
-        }
-
-        header {
-            background-color: var(--color-primario);
-            color: #ffffff;
-            padding: 20px 40px;
-            text-align: center;
-            border-bottom: 4px solid var(--color-acento);
-        }
-
-        header h1 {
-            margin: 0;
-            font-size: 2.2em; /* Ajustado para pantallas pequeñas */
-        }
-
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: var(--color-tarjeta);
-            border-radius: 8px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-        }
-
-        footer {
-            text-align: center;
-            margin-top: 20px;
-            padding: 0 20px;
-            font-size: 0.9em;
-            color: #777;
-        }
-
-        h1, h2, h3 {
-            color: var(--color-primario-oscuro);
-            margin-top: 1em;
-            margin-bottom: 0.5em;
-        }
-
-        h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; }
-        h3 { color: var(--color-primario); }
-
-        p { margin-bottom: 1em; }
-        ul, ol { margin-bottom: 1em; padding-left: 25px; }
-        li { margin-bottom: 0.5em; }
-
-        /* Estilo para puntos clave */
-        .punto-clave {
-            background-color: #f9f9f9;
-            border-left: 4px solid var(--color-acento);
-            padding: 10px 15px;
-            margin: 10px 0;
-            border-radius: 4px;
-        }
-
-        /* --- Estilos de Navegación y Video --- */
-        .video-wrapper {
-            text-align: center;
-            margin-bottom: 30px;
-        }
-        
-        /* Contenedor responsivo para video/iframe o placeholder */
-        .video-container {
-            position: relative;
-            width: 100%;
-            padding-bottom: 56.25%; /* Proporción 16:9 */
-            height: 0;
-            background-color: #e0e0e0; /* Color de fondo para placeholder */
-            border-radius: 8px;
-            overflow: hidden;
-            border: 1px solid #ddd;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .video-container iframe {
+        .video-container iframe,
+        .video-container video {
             position: absolute;
             top: 0;
             left: 0;
@@ -366,23 +276,23 @@
                 <div class="video-grid">
                     <!-- Video 1 (Placeholder) -->
                     <div class="video-grid-item">
-                        <h3>Video Resumen 1</h3>
+                        <h3>1. OneDrive</h3>
                         <div class="video-container">
-                            <span class="video-placeholder-text">Espacio para Video Resumen</span>
+                            <video src="https://luisonyturbe.github.io/robotica/onedrive.mov" controls playsinline></video>
                         </div>
                     </div>
                     <!-- Video 2 (Placeholder) -->
                     <div class="video-grid-item">
-                        <h3>Video Resumen 2</h3>
+                        <h3>2. Roles de Equipo</h3>
                         <div class="video-container">
-                             <span class="video-placeholder-text">Espacio para Video Resumen</span>
+                             <video src="https://luisonyturbe.github.io/robotica/Roles.mov" controls playsinline></video>
                         </div>
                     </div>
                     <!-- Video 3 (Placeholder) -->
                     <div class="video-grid-item">
-                        <h3>Video Resumen 3</h3>
+                        <h3>3. Algoritmos</h3>
                         <div class="video-container">
-                             <span class="video-placeholder-text">Espacio para Video Resumen</span>
+                             <video src="https://luisonyturbe.github.io/robotica/Algoritmo.mov" controls playsinline></video>
                         </div>
                     </div>
                 </div>
